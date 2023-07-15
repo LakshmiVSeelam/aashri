@@ -82,7 +82,7 @@
                 <div class="collapse navbar-collapse" id="navbar-menu">
                     <ul class="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
                         <li [class]="menuLink.children !== null ? 'dropdown' : ''" *ngFor="let menuLink of menuLinks">
-                            <a [href]="menuLink.link" class="dropdown-toggle active" data-toggle="dropdown" >{{menuLink.name}}</a>
+                            <a [routerLink]="menuLink.link" class="dropdown-toggle active" data-toggle="dropdown" >{{menuLink.name}}</a>
                             <ul class="dropdown-menu" *ngIf="menuLink.children !== null">
                                 <li><a href="index.html">Home Version One</a></li>
                                 <li><a href="index-2.html">Home Version Two</a></li>
