@@ -7,4 +7,19 @@ import { Component } from '@angular/core';
 })
 export class CausesComponent {
 
+  causesData = [
+    {
+      title: 'Medical Rehabilation',
+
+    },
+    {
+      title: 'Food Relief Operations',
+      
+    },
+    {
+      title: 'Empowering Women in Rural',
+      
+    }
+  ]
+
 }

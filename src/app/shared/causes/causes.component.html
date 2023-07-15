@@ -23,37 +23,37 @@
             <div class="causes-items">
                 <div class="row">
                     <!-- Single Item -->
-                    <div class="single-item col-lg-4 col-md-6">
+                    <div class="single-item col-lg-4 col-md-6" *ngFor="let item of causesData">
                         <div class="item">
                             <div class="thumb">
                                 <a href="#">
                                     <img src="assets/img/800x600.png" alt="Thumb">
-                                    <span class="overlay">
+                                    <!-- <span class="overlay">
                                         <strong>Created : </strong> Nov 7, 2020
-                                    </span>
+                                    </span> -->
                                 </a>
                             </div>
                             <div class="info">
                                 <h4>
-                                    <a href="#">Give Education To Africa</a>
+                                    <a href="#">{{item.title}}</a>
                                 </h4>
-                                <p>
+                                <!-- <p>
                                     Especially do at he possession insensible manner sympathize boisterous it. 
-                                </p>
-                                <div class="progress-box">
+                                </p> -->
+                                <!-- <div class="progress-box">
                                     <div class="progress">
                                         <div class="progress-bar" role="progressbar" data-width="50">
                                             <span>50%</span>
                                         </div>
                                     </div>
                                     <p>Raised : $4200 <span>Goal : $8400</span></p>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
                     <!-- End Single Item -->
                     <!-- Single Item -->
-                    <div class="single-item col-lg-4 col-md-6">
+                    <!-- <div class="single-item col-lg-4 col-md-6">
                         <div class="item">
                             <div class="thumb">
                                 <a href="#">
@@ -83,10 +83,10 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- End Single Item -->
                     <!-- Single Item -->
-                    <div class="single-item col-lg-4 col-md-6">
+                    <!-- <div class="single-item col-lg-4 col-md-6">
                         <div class="item">
                             <div class="thumb">
                                 <a href="#">
@@ -113,7 +113,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- End Single Item -->
                 </div>
             </div>

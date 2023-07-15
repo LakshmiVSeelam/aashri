@@ -1,1 +1,82 @@
-<p>donate works!</p>
+
+<app-donation></app-donation>
+
+<div class="about-area default-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h4>For Kids</h4>
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr *ngFor="let item of kidsExpenses"> 
+                            <td class="text-capitalize">{{ item.name }}</td>
+                            <td class="text-capitalize">{{ item.amount }} * 35 </td>
+                            <td class="text-capitalize">{{ item.amount * 35 }} Anually</td>
+                        </tr>
+                        <tr>
+                            <td class="text-capitalize"></td>
+                            <td class="text-capitalize">Total</td>
+                            <td class="text-capitalize">{{ kidsExpensesTotal }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-lg-6">
+                <h4>Meals</h4>
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr *ngFor="let item of mealsCost"> 
+                            <td class="text-capitalize">{{ item.name }}</td>
+                            <td class="text-capitalize">{{ item.amount }}</td>
+                        </tr>
+                        <!-- <tr>
+                            <td class="text-capitalize"></td>
+                            <td class="text-capitalize">Total</td>
+                            <td class="text-capitalize">{{ kidsExpensesTotal }}</td>
+                        </tr> -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="about-area bg-gray">
+    <div class="container">
+        <div class="row align-center default-padding">
+            <div class="col-lg-6">
+                <h4>Employee Salaries</h4>
+                <table class="table table-bordered">
+                    <thead>
+                        <th>Name of employee</th>
+                        <th>Salaries per month</th>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of employeeSalaries"> 
+                            <td class="text-capitalize">{{ item.name }}</td>
+                            <td class="text-capitalize">{{ item.amount }}</td>
+                        </tr>
+                        <tr>
+                            <td class="text-capitalize">Total</td>
+                            <td class="text-capitalize">{{ employeeSalariesTotal }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-lg-6">
+                <h4>Maintenance</h4>
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr *ngFor="let item of maintenanceCost"> 
+                            <td class="text-capitalize">{{ item.name }}</td>
+                            <td class="text-capitalize">{{ item.amount }}</td>
+                        </tr>
+                        <tr>
+                            <td class="text-capitalize">Total</td>
+                            <td class="text-capitalize">{{ maintenanceCostTotal }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
